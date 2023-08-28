@@ -1,0 +1,47 @@
+@keyframes cascade {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .cascade-left{
+    animation-name: cascade;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+  }
+  
+  
+  @keyframes cascade-img {
+    0% {
+      opacity: 0;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(100%);
+    }
+  }
+  
+  .cascade-img {
+    animation-name: cascade;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+  }
+
+
+  .image-container {
+    display: inline-block;
+    transition: transform 0.5s ease-in-out; /* Reduje la duración de la transición */
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1); /* Ajusta el valor de escala según tus preferencias */
+  }
+  
